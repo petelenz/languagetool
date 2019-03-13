@@ -1,0 +1,12 @@
+<!-- English rule, 2019-03-13 -->
+<rule id="AND_VS_OR" name="and vs. or">
+ <pattern case_sensitive='yes'>
+  <marker>
+  <token>and</token>
+  <token>Madam</token>
+  </marker>
+ </pattern>
+ <message>Did you mean "or"?</message>
+ <example correction=''>Dear Sir <marker>and Madam</marker>,</example>
+ <example>Dear Sir or Madam,</example>
+</rule>
